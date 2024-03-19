@@ -14,8 +14,8 @@ This is a simple demo application that shows how to use BullMQ, a popular job pr
 ```bash
 git clone https://github.com/your-username/bullmqdemo.git
 cd bullmqdemo
-Install the dependencies:
 ```
+Install the dependencies:
 
 
 
