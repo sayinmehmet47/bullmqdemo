@@ -22,15 +22,23 @@ Install the dependencies:
 ```bash
 npm install
 Start the Redis server:
+```
+
+
+
 
 ```bash
 docker run -p 6379:6379 -d redis:6.2.6
+```
+
 Or, if you have Redis installed locally, start the Redis server using your preferred method.
 
 Run the Express server and worker:
 
 ```bash
 node start.js
+```
+
 This command will run both the server and the worker concurrently.
 
 Access the BullMQ UI:
@@ -43,6 +51,7 @@ To add a job to the queue, send a POST request to http://localhost:3000/addJob w
 
 ```bash
 curl -X POST -H "Content-Type: application/json" -d '{"jobData": "test"}' http://localhost:3000/addJob
+```
 
 Viewing Jobs
 To view the jobs in the queue, access the BullMQ UI at http://localhost:3000/admin/queues.
