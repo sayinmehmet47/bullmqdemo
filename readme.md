@@ -21,8 +21,8 @@ Install the dependencies:
 
 ```bash
 npm install
-Start the Redis server:
 ```
+Start the Redis server:
 
 
 
