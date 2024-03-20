@@ -22,5 +22,9 @@ const DEFAULT_REMOVE_CONFIG = {
 };
 
 export async function addJobToQueue<T>(data: T): Promise<Job<T>> {
-  return myQueue.add('job', data, DEFAULT_REMOVE_CONFIG);
+  return myQueue.add('job', data, {
+    delay: 5000,
+    removeOnComplete: true,
+    removeOnFail: true,
+  });
 }
